@@ -9,11 +9,11 @@ admin.initializeApp(
       credential: admin.credential.cert(
             serviceAccount
       ),
-      databaseURL: "https://piri-vehicle-service.firebaseio.com"
+      databaseURL: "https://<yourdbname>.firebaseio.com"
 });
 var say = 0;
 
-//setCustomUserClaims("U8m8STUAqeUaqVDKB5aKWMm5s842");
+//setCustomUserClaims("uId");
 
 function setCustomUserClaims(uid) {
       admin.auth().setCustomUserClaims(uid, {roleId: 1}).then(() => {
